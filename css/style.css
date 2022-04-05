@@ -135,12 +135,12 @@ header {
 .about__left {
     margin-right: 50px;
 }
-.about__left h6, .service__title h6, .categories__title h6 {
+.about__left h6, .service__title h6, .categories__title h6, .blog__title h6, .testimonials__title h6 {
     font-family: 'Pacifico', cursive;
     font-size: 25px;
     color: #ff6600;
 }
-.about__left h2, .service__title h2, .categories__title h2, .jumping__title h2 {
+.about__left h2, .service__title h2, .categories__title h2, .jumping__title h2, .blog__title h2, .testimonials__title h2 {
     font-size: 35px;
     font-weight: 600;
     line-height: 50px;
@@ -416,6 +416,123 @@ header {
 }
 /* END JUMPING CSS */
 
+/* VIDEO CSS */
+.video {
+    background-color: #fff;
+    margin: 250px 0 100px 0;
+    position: relative;
+}
+.video__content iframe {
+    width: 80%;
+    height: 80vh;
+}
+.video__content {
+    background-image: url(./../image/banner3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    border-radius: 20px;
+    position: relative;
+}
+.video__content::before {
+    content: "";
+    background: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 20px;
+}
+
+.video__icon i {
+    font-size: 30px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+    color: #ff6600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: all 0.5s ease-in-out;
+    animation: videoicon 1.5s linear infinite;
+    border: transparent;
+}
+.video__icon i:hover {
+    font-size: 35px;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    background-color: #ff6600;
+    color: white;
+}
+@keyframes videoicon {
+    0% {
+        box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+    0% {
+        box-shadow: 0 0 0 5 rgb(255 255 255 / 25%), 0 0 0 15px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
+    }
+    100% {
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 
+    }
+}
+/* END VIDEO CSS  */
+
+/* BLOG CSS */
+.blog {
+    padding: 100px 0;
+    background-color: #f7f7f7;
+}
+.blog__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.blog__text h5 {
+    font-weight: 700;
+}
+.blog__user img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.blog__icon {
+    align-items: center;
+    justify-content: space-between;
+}
+.blog__icon a {
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.blog__user {
+    align-items: center;
+}.blog__icon>a:hover {
+    color: #ff6600;
+}
+/* END BLOG CSS  */
+
+/* TESTIMONIALS CSS */
+.testimonials {
+    padding: 100px 0;
+}
+.testimonials__title {
+    text-align: center;
+}
+.carousel-item>a>img {
+    width: 10px;
+    border-radius: 50%;
+}
+/* END TESTIMONIALS CSS  */
+
 /* MEDIA  */
 @media screen and (max-width:992px) {
     .navbar-nav {
@@ -434,17 +551,17 @@ header {
     .navbar__content h1 {
         font-size: 45px;
     }
-    .navbar__content p, .menu__item p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
+    .navbar__content p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
         font-size: 15px;
         line-height: 26px;
     }
     .navbar__content button {
         padding: 18px 45px;
     }
-    .about__left h6, .restaurant__title h6, .categories__title h6 {
+    .about__left h6, .restaurant__title h6, .categories__title h6, .blog__title h6, .testimonials__title h6 {
         font-size: 22px;
     }
-    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2 {
+    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2, .blog__title h2, .testimonials__title h2 {
         font-size: 32px;
         line-height: 44px;
     }
@@ -465,17 +582,6 @@ header {
     .categories__text a {
         font-size: 20px;
     }
-    .menu__top i {
-        font-size: 25px;
-        height: 60px;
-        width: 60px;
-        line-height: 60px;
-        border-radius: 13px;
-        margin-right: 15px;
-    }
-    .menu__text a {
-        font-size: 20px;
-    }
     .jumping__content {
         height: 400px;
     }
@@ -484,6 +590,22 @@ header {
         border-radius: 8px;
         margin: 25px 15px;
         font-size: 17px;
+    }
+    .jumping__item i {
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .jumping__item p {
+        font-size: 2em;
+        margin: 13px 0 3px 0;
+    }
+    .jumping__item span {
+        font-size: 15px;
+    }
+    .video__content {
+        height: 450px;
     }
 }
 @media screen and (max-width:768px) {
@@ -503,17 +625,17 @@ header {
     .navbar__content h1 {
         font-size: 38px;
     }
-    .navbar__content p, .menu__item p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
+    .navbar__content p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
         font-size: 13px;
         line-height: 22px;
     }
     .navbar__content button {
         padding: 15px 40px;
     }
-    .about__left h6, .restaurant h6, .categories__title h6 {
+    .about__left h6, .restaurant__title h6, .categories__title h6, .blog__title h6, .testimonials__title h6 {
         font-size: 18px;
     }
-    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2 {
+    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2, .blog__title h2, .testimonials__title h2 {
         font-size: 28px;
         line-height: 36px;
     }
@@ -534,17 +656,6 @@ header {
     .categories__text a {
         font-size: 17px;
     }
-    .menu__top i {
-        font-size: 20px;
-        height: 50px;
-        width: 50px;
-        line-height: 50px;
-        border-radius: 10px;
-        margin-right: 10px;
-    }
-    .menu__text a {
-        font-size: 17px;
-    }
     .jumping__content {
         height: 350px;
     }
@@ -553,6 +664,23 @@ header {
         border-radius: 6px;
         margin: 20px 10px;
         font-size: 15px;
+    }
+    .jumping__item i {
+        font-size: 18px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .jumping__item p {
+        font-size: 1.5em;
+        margin: 10px 0 0 0;
+    }
+    .jumping__item span {
+     font-size: 13px;
+    }
+    .video__content {
+        height: 400px;
+        margin-top: 400px ;
     }
 }
 @media screen and (max-width:576px) {
@@ -572,17 +700,17 @@ header {
     .navbar__content h1 {
         font-size: 30px;
     }
-    .navbar__content p, .menu__item p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
+    .navbar__content p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
         font-size: 11px;
         line-height: 18px;
     }
     .navbar__content button {
         padding: 10px 35px;
     }
-    .about__left h6, .restaurant__title h6, .categories__title h6 {
+    .about__left h6, .restaurant__title h6, .categories__title h6, .blog__title h6, .testimonials__title h6  {
         font-size: 15px;
     }
-    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2 {
+    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2, .blog__title h2, .testimonials__title h2 {
         font-size: 25px;
         line-height: 30px;
     }
@@ -603,17 +731,6 @@ header {
     .categories__text a {
         font-size: 14px;
     }
-    .menu__top i {
-        font-size: 15px;
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        border-radius: 7px;
-        margin-right: 5px;
-    }
-    .menu__text a {
-        font-size: 15px;
-    }
     .jumping__content {
         height: 300px;
     }
@@ -622,5 +739,22 @@ header {
         border-radius: 4px;
         margin: 15px 5px;
         font-size: 13px;
+    }
+    .jumping__item i {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    .jumping__item p {
+        font-size: 1em;
+        margin: 5px 0 0 0;
+    }
+    .jumping__item span {
+        font-size: 11px;
+    }
+    .video__content {
+        margin-top: 350px;
+        height: 300px;
     }
 }
