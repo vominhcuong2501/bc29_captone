@@ -96,30 +96,7 @@ header {
     font-size: 25px;
     text-decoration: none;
 }
-@media screen and (max-width:768px) {
-    .navbar-nav {
-        padding-top: 70px
-    }
-    .navbar-nav a {
-        font-size: 20px;
-    }
-    .btn__close i {
-        font-size: 17px;
-        padding: 5px 10px;
-    }
-}
-@media screen and (max-width:576px) {
-    .navbar-nav {
-        padding-top: 50px
-    }
-    .navbar-nav a {
-        font-size: 15px;
-    }
-    .btn__close i {
-        font-size: 14px;
-        padding: 5px 10px;
-    }
-}
+
 .navbar-nav a:hover {
     color: #ff6600;
 }
@@ -130,16 +107,6 @@ header {
     font-weight: 700;
     font-size: 55px;
     color: #fff;
-}
-@media screen and (max-width:768px) {
-    .navbar__content h1 {
-        font-size: 45px;
-    }
-}
-@media screen and (max-width:576px) {
-    .navbar__content h1 {
-        font-size: 30px;
-    }
 }
 .navbar__content p {
     color: #faf0d8;
@@ -200,11 +167,6 @@ header {
     height: 620px;
     width: 100%;
 }
-@media screen and (max-width:992px) {
-    .restaurant__img {
-        height: 300px;
-    } 
-}
 .restaurant__img::before {
     content: "";
     background: rgb(16 15 19 / 46%);
@@ -227,7 +189,7 @@ header {
 .restaurant__item>a>h5 {
     color: black;
     font-weight: 900;
-    margin: 15px 0 20px 0;
+    margin: 15px 0;
     font-size: 22px;
 }
 .restaurant__item>a {
@@ -285,7 +247,7 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 10px 50px;
+    padding: 10px 40px;
     font-weight: 700;
     background-color: transparent;
     z-index: 1;
@@ -309,7 +271,7 @@ header {
     border: none;
 }
 .menu__item {
-    margin-top: 30px;
+    margin: 15px;
     padding: 40px 40px 30px 40px;
     border-radius: 20px;
     transition: all 0.5s;
@@ -320,7 +282,6 @@ header {
 .menu__top {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
 }
 .menu__top i {
     font-size: 30px;
@@ -355,10 +316,10 @@ header {
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
 }
 .menu__item p {
-    margin-bottom: 5px;
     font-size: 19px;
     color: rgba(29, 37, 59, 0.7);
     line-height: 30px;
+    margin: 0;
 }
 /* END MENU CSS  */
 
@@ -372,11 +333,6 @@ header {
     height: 450px;
     z-index: 1;
     position: relative;
-}
-@media screen and (max-width:992px) {
-    .jumping__content {
-        height: 500px;
-    }
 }
 .jumping__content::after {
     content: '';
@@ -395,13 +351,12 @@ header {
 .jumping__title h2 {
     color: white;
     font-size: 50px;
-    margin-bottom: 50px;
 }
 .jumping__title button {
     padding: 15px 50px;
     border-radius: 10px;
     border: 2px solid white;
-    margin: 0 20px 30px 20px;
+    margin: 30px 20px;
     color: white;
     font-weight: 500;
     font-size: 20px;
@@ -421,4 +376,251 @@ header {
 .jumping__contact:hover {
     opacity: 0.8;
 }
+.jumping__item {
+    text-align: center;
+    box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
+    background-color: white;
+    margin: 40px 15px;
+    border-radius: 10px;
+    transform: translateY(0px);
+    transition: all 0.5s;
+}
+.jumping__item:hover {
+    transform: translateY(-20px);
+    box-shadow: rgb(46 41 51 / 8%) 0px 2px 4px, rgb(71 63 79 / 16%) 0px 5px 10px;
+}
+.jumping .card {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+.jumping__item i {
+    background: #ff6600;
+    font-size: 26px;
+    border-radius: 50%;
+    width: 68px;
+    height: 68px;
+    line-height: 68px;
+    color: #fff;
+    text-align: center;
+}
+.jumping__item p {
+    font-size: 2.6em;
+    font-weight: 600;
+    color: #232121;
+    margin: 15px 0 5px 0;
+}
+.jumping__item span {
+    color: rgba(22,28,45,0.7);
+    font-weight: 600;
+}
 /* END JUMPING CSS */
+
+/* MEDIA  */
+@media screen and (max-width:992px) {
+    .navbar-nav {
+        padding-top: 70px
+    }
+    .navbar-nav a {
+        font-size: 20px;
+    }
+    .btn__close i {
+        font-size: 17px;
+        padding: 5px 10px;
+    }
+    .form-inline {
+        width: 250px;
+    }
+    .navbar__content h1 {
+        font-size: 45px;
+    }
+    .navbar__content p, .menu__item p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .navbar__content button {
+        padding: 18px 45px;
+    }
+    .about__left h6, .restaurant__title h6, .categories__title h6 {
+        font-size: 22px;
+    }
+    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2 {
+        font-size: 32px;
+        line-height: 44px;
+    }
+    .restaurant__img {
+        height: 500px;
+    } 
+    .restaurant__item>a>i {
+        font-size: 22px;
+        padding: 22px;
+        margin-bottom: 10px;
+    }
+    .restaurant__item>a>h5 {
+        font-size: 20px;
+    }
+    .categories__text {
+        padding: 8px 28px;
+    }
+    .categories__text a {
+        font-size: 20px;
+    }
+    .menu__top i {
+        font-size: 25px;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        border-radius: 13px;
+        margin-right: 15px;
+    }
+    .menu__text a {
+        font-size: 20px;
+    }
+    .jumping__content {
+        height: 400px;
+    }
+    .jumping__title button {
+        padding: 10px 40px;
+        border-radius: 8px;
+        margin: 25px 15px;
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:768px) {
+    .navbar-nav {
+        padding-top: 60px
+    }
+    .navbar-nav a {
+        font-size: 17px;
+    }
+    .btn__close i {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+    .form-inline {
+        width: 200px;
+    }
+    .navbar__content h1 {
+        font-size: 38px;
+    }
+    .navbar__content p, .menu__item p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .navbar__content button {
+        padding: 15px 40px;
+    }
+    .about__left h6, .restaurant h6, .categories__title h6 {
+        font-size: 18px;
+    }
+    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .restaurant__img {
+        height: 400px;
+    } 
+    .restaurant__item>a>i {
+        font-size: 19px;
+        padding: 19px;
+        margin-bottom: 5px;
+    }
+    .restaurant__item>a>h5 {
+        font-size: 17px;
+    }
+    .categories__text {
+        padding: 5px 25px;
+    }
+    .categories__text a {
+        font-size: 17px;
+    }
+    .menu__top i {
+        font-size: 20px;
+        height: 50px;
+        width: 50px;
+        line-height: 50px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+    .menu__text a {
+        font-size: 17px;
+    }
+    .jumping__content {
+        height: 350px;
+    }
+    .jumping__title button {
+        padding: 8px 30px;
+        border-radius: 6px;
+        margin: 20px 10px;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:576px) {
+    .navbar-nav {
+        padding-top: 50px
+    }
+    .navbar-nav a {
+        font-size: 15px;
+    }
+    .btn__close i {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .form-inline {
+        display: none;
+    }
+    .navbar__content h1 {
+        font-size: 30px;
+    }
+    .navbar__content p, .menu__item p, .about__right p, .restaurant__title p, .restaurant__item p, .categories__text p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    .navbar__content button {
+        padding: 10px 35px;
+    }
+    .about__left h6, .restaurant__title h6, .categories__title h6 {
+        font-size: 15px;
+    }
+    .about__left h2, .restaurant__title h2, .categories__title h2, .jumping__title h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .restaurant__img {
+        height: 300px;
+    } 
+    .restaurant__item>a>i {
+        font-size: 16px;
+        padding: 16px;
+        margin-bottom: 0px;
+    }
+    .restaurant__item>a>h5 {
+        font-size: 14px;
+    }
+    .categories__text {
+        padding: 0px 20px;
+    }
+    .categories__text a {
+        font-size: 14px;
+    }
+    .menu__top i {
+        font-size: 15px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 7px;
+        margin-right: 5px;
+    }
+    .menu__text a {
+        font-size: 15px;
+    }
+    .jumping__content {
+        height: 300px;
+    }
+    .jumping__title button {
+        padding: 5px 20px;
+        border-radius: 4px;
+        margin: 15px 5px;
+        font-size: 13px;
+    }
+}
