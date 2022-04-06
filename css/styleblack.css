@@ -39,13 +39,15 @@ header {
 }
 .form-control {
     padding: 20px 50px 20px 20px;
+    background-color: #232220;
+    border: none;
 }
 .fa-search {
     position: absolute;
     right: 45px;
     bottom: 10px;
     font-size: 20px;
-    color: #5b606c;
+    color: #c2d0da;
     transition: all 0.5s;
     z-index: 999;
 }
