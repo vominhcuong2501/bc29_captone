@@ -460,8 +460,8 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: all 0.5s ease-in-out;
-    animation: videoicon 1.5s linear infinite;
+    transition: all 1s ease-in-out;
+    animation: videoicon 1s linear infinite;
     border: transparent;
 }
 .video__icon i:hover {
@@ -476,11 +476,8 @@ header {
     0% {
         box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
     }
-    50% {
-        box-shadow: 0 0 0 5 rgb(255 255 255 / 25%), 0 0 0 15px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
-    }
     100% {
-        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }
 /* END VIDEO CSS  */
@@ -651,12 +648,16 @@ footer {
 }
 .contact .form-control {
     padding: 30px 50px 30px 20px;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn {
     padding: 20px 0;
     background-color: #ff6600;
     border: none;
     transition: all 0.5s;
+    max-width: 95%;
+    margin: 0 auto;
 }
 .submit-btn:hover {
     opacity: 0.8;
