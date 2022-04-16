@@ -485,11 +485,8 @@ header {
     0% {
         box-shadow: 0 0 0 0 rgb(255 255 255 / 25%), 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
     }
-    50% {
-        box-shadow: 0 0 0 5 rgb(255 255 255 / 25%), 0 0 0 15px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%);
-    }
     100% {
-        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 
+        box-shadow: 0 0 0 10px rgb(255 255 255 / 25%), 0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgb(50 100 245 / 0%);
     }
 }
 /* END VIDEO CSS  */
@@ -811,7 +808,7 @@ footer a:hover {
     }
     .video__content {
         height: 350px;
-        margin-top: 550px ;
+        margin-top: 600px ;
     }
     .blog__time {
         position: absolute;
