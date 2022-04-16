@@ -771,10 +771,11 @@ footer a:hover {
         font-size: 17px;
     }
     .jumping__list {
-        margin-top: 70px;
+        margin-top: 90px;
     }
     .video__content {
         height: 500px;
+        margin-top: 330px;
     }
     .testimonials__wrapper {
         width: 70%;
