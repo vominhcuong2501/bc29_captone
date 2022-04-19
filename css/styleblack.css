@@ -724,6 +724,10 @@ footer a:hover {
     text-decoration: none;
     color: #ff6600;
 }
+.backtotop:hover {
+    background-color: transparent;
+    border: 2px solid #ff6600;
+}
 .cd-top--is-visible { 
     visibility: visible;
     opacity: 1;
